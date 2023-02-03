@@ -5,14 +5,14 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Contacto">
   <h1 class="text-center espacio_sup">Contacto</h1>
 
-
+<div class="flex justify-center">
   <form action="" class="flex flex-col justify-center items-end my-10">
     <div class="text-white flex items-center">
       <i class="fa-solid fa-id-card fa-lg"></i>
       <input
         type="text"
         placeholder="Nombre"
-        class="input-sm w-full max-w-xs m-2 bg-green-700 uppercase"
+        class="input-sm max-w-xs m-2 bg-green-700 uppercase"
       />
     </div>
     <div class="correo text-white flex items-center">
@@ -20,7 +20,7 @@ import Layout from "../layouts/Layout.astro";
       <input
         type="email"
         placeholder="correo@xxxxx.com"
-        class="input-sm input-sm w-full max-w-xs m-2 bg-green-700 lowercase"
+        class="input-sm max-w-xs m-2 bg-green-700 lowercase"
       />
     </div>
     <div class="tel text-white flex items-center">
@@ -28,17 +28,17 @@ import Layout from "../layouts/Layout.astro";
       <input
         type="number"
         placeholder="telefono"
-        class="input-sm input-sm w-full max-w-xs m-2 bg-green-700"
+        class="input-sm max-w-xs m-2 bg-green-700"
       />
     </div>
     <div class="mensaje text-white flex items-center">
       <i class="fa-solid fa-message fa-lg"></i>
       <textarea
-        class="textarea-sm w-full max-w-xs m-2 bg-green-700"
+        class="textarea-sm max-w-xs m-2 bg-green-700"
         placeholder="Mensaje"></textarea>
     </div>
     <button class="boton mt-3">Enviar</button>
-  </form>
+  </form></div>
 </Layout>
 
 <style>
