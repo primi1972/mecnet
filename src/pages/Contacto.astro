@@ -1,31 +1,62 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
+
 <Layout title="Contacto">
-<h1 class="text-center espacio_sup">Contacto</h1>
+  <h1 class="text-center espacio_sup">Contacto</h1>
 
-<form action="" class="w-full flex flex-col justify-center items-center">
-    <div class="nombre">
-    <input type="text" placeholder="Nombre" class="input-success input-sm w-full max-w-xs m-2 bg-white" />        
-    </div>
-    <div class="apellidos">
-        <input type="text" placeholder="Nombre" class="input-success input-sm w-full max-w-xs m-2 bg-white" />        
-    </div>
-    <div class="correo">
-    <input type="text" placeholder="Nombre" class="input-success input-sm w-full max-w-xs m-2 bg-white" />        
-    </div>
-    <div class="tel">
-    <input type="text" placeholder="Nombre" class="input-success input-sm w-full max-w-xs m-2 bg-white" />        
-    </div>
-    <div class="mensaje">
-        <textarea class="textarea-accent w-full max-w-xs m-2 bg-white" placeholder="Mensaje"></textarea>     
-    </div>
-</form>
 
+  <form action="" class="flex flex-col justify-center items-end my-10">
+    <div class="text-white flex items-center">
+      <i class="fa-solid fa-id-card fa-lg"></i>
+      <input
+        type="text"
+        placeholder="Nombre"
+        class="input-sm w-full max-w-xs m-2 bg-green-700 uppercase"
+      />
+    </div>
+    <div class="correo text-white flex items-center">
+      <i class="fa-sharp fa-solid fa-envelope fa-lg"></i>
+      <input
+        type="email"
+        placeholder="correo@xxxxx.com"
+        class="input-sm input-sm w-full max-w-xs m-2 bg-green-700 lowercase"
+      />
+    </div>
+    <div class="tel text-white flex items-center">
+      <i class="fa-solid fa-mobile fa-lg"></i>
+      <input
+        type="number"
+        placeholder="telefono"
+        class="input-sm input-sm w-full max-w-xs m-2 bg-green-700"
+      />
+    </div>
+    <div class="mensaje text-white flex items-center">
+      <i class="fa-solid fa-message fa-lg"></i>
+      <textarea
+        class="textarea-sm w-full max-w-xs m-2 bg-green-700"
+        placeholder="Mensaje"></textarea>
+    </div>
+    <button class="boton mt-3">Enviar</button>
+  </form>
 </Layout>
 
 <style>
-    input, textarea{
-        min-width: 350px;
-    }
+  input,
+  textarea {
+    min-width: 350px;
+  }
+  .boton {
+    text-decoration: none;
+    padding: 5px 10px;
+  
+    color: white;
+    background-color: green;
+    transition: 200ms;
+    margin-right: .5rem;
+  }
+
+  .boton:hover {
+    box-shadow: 2px 2px 6px -1px black
+  }
 </style>
