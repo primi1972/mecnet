@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Contacto">
+<h1 class="text-center espacio_sup">Contacto</h1>
+
+<form action="" class="w-full flex flex-col justify-center items-center">
+    <div class="nombre">
+    <input type="text" placeholder="Nombre" class="input-success input-sm w-full max-w-xs m-2 bg-white" />        
+    </div>
+    <div class="apellidos">
+    <input type="text" placeholder="Nombre" class="input-success input-sm w-full max-w-xs m-2 bg-white" />        
+    </div>
+    <div class="correo">
+    <input type="text" placeholder="Nombre" class="input-success input-sm w-full max-w-xs m-2 bg-white" />        
+    </div>
+    <div class="tel">
+    <input type="text" placeholder="Nombre" class="input-success input-sm w-full max-w-xs m-2 bg-white" />        
+    </div>
+    <div class="mensaje">
+        <textarea class="textarea-accent w-full max-w-xs m-2 bg-white" placeholder="Mensaje"></textarea>     
+    </div>
+</form>
+
+</Layout>
+
+<style>
+    input, textarea{
+        min-width: 350px;
+    }
+</style>

@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card_1.astro';
+---
+<Layout title="Productos">
+
+<h1 class="text-center espacio_sup">Tenemos todo lo que necesitas para tu empresa solicita una cotización</h1>
+<div class="cards flex flex-wrap gap-4 justify-center my-6">
+<Card imagen="/productos/computadoras.jpg" title="Computo" body="Venta de Equipo de Computo para todas sus necesidades, desde las mas sencillas para su casa, hasta servidores donde puede almacenar toda su información y compartirlo con su grupo de trabajo. Ahora que si solo requieres partes para la reparación o actualización también te podemos ayudar."/>
+<Card imagen="/productos/cctv.jpg" title="Seguridad" body="Hoy día la necesidad de mantener un sistema de video-vigilancia es primordial desde el punto de vista de la seguridad para todos en tu empresa, y aquí contamos con todo lo necesario, cuida lo que mas valor tiene en tu negocio (tu personal)."/>
+<Card imagen="/productos/telefonia.jpg" title="Telefonia" body="Necesitas un sistema de telefonía sea analógico, digital o bien híbrido, contamos con todos los sistemas de telefonía, si requieres actualización o mantenimiento con nosotros encontraras la solución."/>
+<Card imagen="/productos/web.jpg" title="Diseño WEB" body="Diseñamos paginas web con las ultimas tecnologías, desde la mas sencilla, pasando por el diseño responsivo y las paginas dinámicas, creadas con HTML, CSS 3 y Javascript, todo esto en los frameworks mas actuales como React JS, Svelte JS o bien Astro JS, dandole toda la potencia en la manera en que tus clientes percibiran en la presentación y posicionamiento, hoy día la presencia en la Internet es esencial para el crecimiento de tu negocio."/>
+
+</div>
+</Layout>

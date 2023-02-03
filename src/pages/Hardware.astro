@@ -1,0 +1,124 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card_2.astro";
+---
+
+<Layout title="Hardware">
+  <main class="background">
+    <div class="categoria">
+      <div class="flex flex-col items-center justify-start mx-5">
+        <h1>Aspel</h1>
+        <Card
+          img="/aspel/sae.jpg"
+          text="Aspel Sae 8.0 R32"
+          href="https://descargas.aspel.com.mx/Download/SAE/reinstal/ASPEL-SAE80_R32.exe"
+          tipo = "Descarga"
+        />
+        <Card
+          img="/aspel/coi.jpg"
+          text="Aspel Coi 9.0 R11"
+          href="https://descargas.aspel.com.mx/Download/COI/reinstal/Aspel-COI90_R11.exe"
+          tipo = "Descarga"
+        />
+        <Card
+          img="/aspel/noi.jpg"
+          text="Aspel Noi 10 R16"
+          href="https://descargas.aspel.com.mx/Download/Noi/reinstal/Aspel-NOI100_R16.exe"
+          tipo = "Descarga"
+        />  
+        <Card
+          img="/youtube.png"
+          text="Configurar Carta Porte 2.0 en Aspel Sae 8.0(Enlace externo)"
+          href="https://www.youtube.com/watch?v=b7HOo4BWxfU"
+          tipo = "Video"
+        />           
+        <Card
+          img="/logo.svg"
+          text="Borrar polizas que se hayan quedado congeladas en el sistema COI 7.0 y 8.0"
+          href="https://descargas.aspel.com.mx/Download/Noi/reinstal/Aspel-NOI100_R16.exe"
+          tipo = "Descarga"
+        />                        
+      </div>
+      <div class="flex flex-col items-center justify-start mx-5">
+        <h1>Contpaq i</h1>
+        <Card
+          img="/contpaq/factura.jpg"
+          text="Factura Electrónica 10.0.1 SP2"
+          href="https://descargas.contpaqi.com/repositorios/fls/evaluacion/FactElect/Sistema/10.0.1/Service_Pack_2_FE_1001.zip"
+          tipo = "Descarga"
+        />
+        <Card
+          img="/contpaq/contabilidad.png"
+          text="Contabilidad 15.2.1"
+          href="https://descargas.contpaqi.com/repositorios/fls/evaluacion/CONTPAQi/sistema/15.2.1/CONTABILIDAD_BANCOS_1521_801.zip"
+          tipo = "Descarga"
+        />
+        <Card
+          img="/contpaq/nominas.png"
+          text="Nominas 15.3.1"
+          href="https://descargas.contpaqi.com/repositorios/fls/evaluacion/Nominas/Sistema/15.3.1/CTi_NOMINAS_1531.zip"
+          tipo = "Descarga"
+        />
+      </div>
+      <div class="flex flex-col items-center justify-start mx-5">
+        <h1>IDSE y SUA</h1>
+        <Card
+          img="/noticias/idse.jpg"
+          text="Lista Excepciones JAVA para IDSE"
+          href="https://www.mecnet.com.mx/IMSS/sitiosjava.txt"
+          tipo = "Descarga"
+        />         
+        <Card
+          img="/noticias/sua.jpg"
+          text="Actualizacion SUA 6.3.2"
+          href="https://www.imss.gob.mx/sites/all/statics/pdf/sua/VersionSUA362.exe"
+          tipo = "Descarga"
+        />        
+      </div>
+      <div class="flex flex-col items-center justify-start mx-5">
+        <h1>Utilerias</h1>
+        <Card
+          img="/logo.svg"
+          text="Recuperar Archivos borrados por virus en USB"
+          href="https://descargas.contpaqi.com/repositorios/fls/evaluacion/FactElect/Sistema/10.0.1/Service_Pack_2_FE_1001.zip"
+          tipo = "Descarga"
+        />       
+      </div>      
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .background {
+    background-image: url("/software.jpg");
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+  }
+  .background:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .categoria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+      drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  }
+</style>

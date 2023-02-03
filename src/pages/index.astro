@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+// import Button from '../components/Card_react'
+---
+
+<Layout title="Inicio">
+  <main class="min-width presentacion">
+    <div class="titulo">
+      <h1>Desarrollando soluciones con nuevas tecnologias</h1>
+      <p class="mt-8">
+        Hoy dia la seguridad, la solucion de nuevos retos, y tu imagen en la WEB son lo pilares para impulsar a tu empresa en el mundo.
+      </p>
+	  <!-- <Button client:load/> -->
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .presentacion {
+	background-image: url('/bg.jpg');
+    position: relative;
+	height: 100vh;
+	 width:auto; 
+	 background-attachment: fixed;
+    background-position: center;
+	overflow: hidden;
+  }
+  .presentacion:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+  .titulo{
+	position: absolute;
+	top:25%;
+	width:auto;
+	margin: 0px 10%;
+	text-align: center;
+	color: white;
+	filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+	text-shadow: 2px 2px 5px black;	
+  }
+
+</style>

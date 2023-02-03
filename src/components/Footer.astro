@@ -1,0 +1,178 @@
+---
+import logo from '/logo.svg';
+---
+
+
+<footer class="">
+  <div class="footer p-10 bg-white text-gray-700">
+    <div class="flex flex-col items-center">
+      <img src={logo} alt="">
+      <p class="text-center text-base">Empresa<br/>Trabajando desde 1998</p>
+    </div> 
+
+    <div class="flex flex-col items-center texto">
+      <span class="footer-title">Horarios</span>  
+      <p class="text-base">Lunes a vernes</p>  
+      <p class="text-base">9:00 a 18:00</p>
+      <p class="text-base">Sabado</p>  
+      <p class="text-base">9:00 a 15:00</p>
+    </div> 
+    <div class="flex flex-col items-center">
+      <span class="footer-title">Redes</span>
+      <div class="redes3d flex justify-center mt-10">
+        <ul class="ul-facebook">
+            <li>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-facebook"></span>
+                </a>
+            </li>
+        </ul>
+        <ul class="ul-twitter">
+            <li>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-twitter"></span>
+                </a>
+            </li>
+        </ul>
+        <ul class="ul-instagram">
+            <li>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-instagram"></span>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs text-center">Todos los derechos reservados a esta copia en proceso de HTML</p>
+  </footer>
+
+  <style>
+p{
+  /* text-shadow: 2px 2px 6px black; */
+}
+
+.redes3d  ul{
+    margin: 0px 10px;
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: rotate(-25deg) skew(25deg);
+}
+.redes3d ul li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height:60px;
+    margin: 0 10px;
+}
+
+.redes3d ul li:before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left:0;
+    width: 100%;
+    height: 10px;
+    background: #fff;
+    transform-origin: top;
+    transform: skewX(-41deg);
+}
+
+.redes3d ul li:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:-9px;
+    width: 9px;
+    height: 100%;
+    background: #fff;
+    transform-origin: right;
+    transform: skewY(-49deg);
+}
+
+.redes3d ul li span{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display:flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-size: 30px !important;
+    transition: 0.2s;
+}
+
+.redes3d .ul-facebook li span{
+    color: #3b5999;
+}
+
+.redes3d .ul-twitter li span{
+    color: #55acee;
+}
+
+.redes3d .ul-linkedin li span{
+    color: #0077b5;
+}
+
+.redes3d .ul-instagram li span{
+    color: #e4405f;
+}
+
+
+.redes3d ul li:hover span{
+    z-index: 1000;
+    transition: 0.5s;
+    color:#fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.redes3d ul li:hover span:nth-child(5){
+    transform: translate(40px, -40px) ;
+    opacity: 1;
+}
+.redes3d ul li:hover span:nth-child(4){
+    transform: translate(30px, -30px) ;
+    opacity: 0.8;
+}
+.redes3d ul li:hover span:nth-child(3){
+    transform: translate(20px, -20px) ;
+    opacity: 0.6;
+}
+.redes3d ul li:hover span:nth-child(2){
+    transform: translate(10px, -10px) ;
+    opacity: 0.4;
+}
+.redes3d ul li:hover span:nth-child(1){
+    transform: translate(0px, -0px) ;
+    opacity: 0.2;
+}
+
+.redes3d .ul-facebook li:hover span{
+    background: #3b5999;
+}
+.redes3d .ul-twitter li:hover span{
+    background: #55acee;
+}
+.redes3d .ul-linkedin li:hover span{
+    background: #0077b5;
+}
+.redes3d .ul-instagram li:hover span{
+    background: #e4405f;
+}
+
+  </style>
